@@ -28,6 +28,15 @@ allprojects {
 	group "org.springframework.boot"
 
 	repositories {
+		mavenLocal()
+		maven { url "https://maven.aliyun.com/repository/central/"}
+		maven { url "https://maven.aliyun.com/repository/public/"}
+		maven { url "https://maven.aliyun.com/repository/google/"}
+		maven { url "https://maven.aliyun.com/repository/gradle-plugin/"}
+		maven { url "https://maven.aliyun.com/repository/spring/"}
+		maven { url "https://maven.aliyun.com/repository/spring-plugin/"}
+		maven { url "https://maven.aliyun.com/repository/grails-core/"}
+		maven { url "https://maven.aliyun.com/repository/apache-snapshots/"}
 		mavenCentral()
 		if (version.contains('-')) {
 			maven { url "https://repo.spring.io/milestone" }
